@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: cornflowerblue; */
+  background: #fff
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAABPSURBVFhH7dmhAcAwDMRAt/uvmTlS0g2OGOjIU/Gfc86dxd5/1ypQFagKVAWqAlWBqkBVoCpQFagKVAWqAlWBqkBVoCpQFajWBz67b4iZD8JHB6p2C1x9AAAAAElFTkSuQmCC)
+    repeat scroll 0 0;
+  animation: animatedBackground 1000s linear infinite;
+}
+
+.progress-container {
+  background: grey;
+  border: 1px solid black;
+  height: 2rem;
+  width: 20rem;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: green;
+}
+
+button {
+  margin: 0.5rem 0;
+  width: 7em;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-moz-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
